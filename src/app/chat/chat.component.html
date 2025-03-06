@@ -1,0 +1,41 @@
+<div class="h-screen flex flex-col overflow-hidden">
+  <!-- Header -->
+  <header
+    class="bg-black h-[60px] px-4 flex items-center justify-between shadow"
+  >
+    <h2 class="text-white ms-3 font-mono">Chat en tiempo 100% real no fake</h2>
+    <button
+      class="bg-orange-200 px-3 py-0.5 me-2 border shadow-outline rounded-md border-orange-200 shadow font-mono text-black cursor-pointer hover:border hover:border-orange-200 hover:bg-black hover:text-orange-200"
+    >
+      Salir
+    </button>
+  </header>
+  <!-- Mensajes -->
+  <div class="flex-1 p-4 overflow-y-auto">
+    <app-message></app-message>
+    <app-message [myMessage]="true"></app-message>
+
+    <p>hola, soy el mensaje</p>
+    <p>hola, soy el mensaje</p>
+    <p class="h-[1000px]">hola, soy el mensaje</p>
+    <p>hola, soy el mensaje</p>
+    <p>hola, soy el mensaje</p>
+    <p>hola, soy el mensaje</p>
+    <p>hola, soy el mensaje</p>
+  </div>
+  <!-- Escribir mensaje-->
+  <div class="flex gap-x-4 mt-4 p-4">
+    <input
+      type="text"
+      name=""
+      id=""
+      class="w-full outline-none shadow p-2 rounded-md"
+      autofocus
+    />
+    <button
+      class="bg-black py-2 px-4 shadow rounded-md text-orange-200 cursor-pointer active:bg-orange-200 active:text-black hover:bg-orange-200 hover:text-black hover:shadow-outline"
+    >
+      Enviar
+    </button>
+  </div>
+</div>
