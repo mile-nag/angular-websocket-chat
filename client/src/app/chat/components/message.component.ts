@@ -1,5 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component, input, Input } from '@angular/core';
+import { ChatMessage } from '../../websocket.service';
 
 @Component({
   selector: 'app-message',
@@ -9,6 +10,8 @@ import { Component, input, Input } from '@angular/core';
 export class MessageComponent {
 
   myMessage = input<boolean>(false);
+
+  message = input.required<ChatMessage>();
 
   constructor() { }
 }
